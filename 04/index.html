@@ -7,18 +7,20 @@
     1. Crearemos una acción que estará escuchando el click del botón con clase add_name
     y una vez que eso se gatille lo que realizará será guardar en una variable el retorno
     de la función prompt (en el tip explicado).
-    2. Una vez tengamos esa variable almacenada, haremos un append en el tag con clase
+    2. Una vez que tengamos esa variable almacenada, haremos un append en el tag con clase
     names, donde crearemos un string y que contenga:
       a) Un li que englobe toda la información
       b) Un span que contenga la información recibida desde el prompt
       c) Un link con clase remove_name y que nos permitirá eliminar el elemento de la lista
     3. Una vez que hemos agregado links con enlaces vacíos, estos al hacerles click nos
     llevarán a la misma página y en la URL le pondrán al final un signo '#', cosa que
-    estéticamente no es muy bonita y que además que nos ensucia la dirección. A si que sería bueno que
-    mediante una delegación de eventos le agreguemos a todos los links vacíos una prevención
-    de eventos, para que ese signo # no aparezca en la dirección.
+    estéticamente no es muy bonita y que además que nos ensucia la dirección. A si que sería
+    bueno que mediante una delegación de eventos le agreguemos a todos los links vacíos una
+    prevención de eventos, para que ese signo # no aparezca en la dirección.
     4. Crearemos finalmente una función que escuche el click del botón remove_name y
     seleccionará el li en cuestión para luego borrarlo por medio del método remove() de jQuery.
+    HINT: Recuerda lo aprendido de traversing, si no; puedes repasarlo en esta dirección:
+    https://api.jquery.com/category/traversing/
 
 
   Tip: con la función prompt() podremos lanzar una ventana donde el usuario ingresará
