@@ -136,5 +136,14 @@
 	<footer class="footer__main">
 		<p class="footer__legal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus sint praesentium laboriosam atque placeat architecto, maxime temporibus sequi veniam quae culpa accusantium dignissimos natus perferendis mollitia quam optio incidunt. Esse!</p>
 	</footer>
+		<script src="../_assets/js/jquery-3.3.1.min.js"></script>
+		<script>
+			//$('article:nth-child(4) li:last-child a') 
+			var elem = $('article:nth-child(4)').find('.article__socialnetworks').children().eq(3).children()
+			elem.attr('href', 'http://pinterest.com').text('Pinterest')
+			$('[href="#"]').on('click', function(e){
+			e.preventDefault();
+	})
+		</script>
 </body>
 </html>
